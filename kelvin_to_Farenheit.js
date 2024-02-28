@@ -11,3 +11,5 @@ fahrenheit = celciusTemp * (9 / 5) + 32;
 
 'Rounds down the value of Fahrenhight'
 fahrenheit = Math.floor(fahrenheit);
+
+console.log("The temperature is " + fahrenheit + "degrees");
