@@ -42,3 +42,19 @@ var vehicle2 = {
     dashboardSpec : 'New',
 };
 console.log(vehicle2);
+
+function vehicleBluePrint(brand, model,engine, dashboardSpec, rimSize){
+
+    this.brand = brand;
+    this.model = model;
+    this.engine = engine;
+    this.dashboardSpec = dashboardSpec;
+    this.rimSize = rimSize;
+};
+
+var vehicle = new vehicleBluePrint('Volkswagen', 'Citi Golf Chico', '1.3', 'Old', '14" steelies');
+console.log(vehicle);
+var vehicle1 = new vehicleBluePrint('Volkswagen', 'Citi Golf Life', '1.6', 'New', '14" Alloys');
+console.log(vehicle1);
+var vehicle2 = new vehicleBluePrint('Volkswagen', 'Citi Golf Velocity', '1.4', 'New', '15" Alloys');
+console.log(vehicle2);
