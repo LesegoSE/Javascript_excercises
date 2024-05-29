@@ -30,4 +30,5 @@ console.log(' Dropped movie: ' + lstDropElmnt + '\n Array elements: ' + movies +
 
 // Extracting array the elements in the range 2 - 4 using Slice() function
 var slyArr = movies.slice(1, 5);
-console.log('\n Array elements: ' + slyArr);
+console.log(' Extracting element of the array in range 2 - 4\n =======================');
+console.log(' Extraxted Array elements: ' + slyArr + '\n Extraxted Array elements (sorted): ' + slyArr.sort());
