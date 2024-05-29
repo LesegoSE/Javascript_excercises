@@ -25,7 +25,7 @@ console.log(' Added movie: ' + frstAddElmnt + '\n Array elements: ' + movies + '
 
 // Removing last element in a array
 var lstDropElmnt = movies.pop();
-console.log('\n After removing last element of the array\n =======================');
+console.log(' After removing last element of the array\n =======================');
 console.log(' Dropped movie: ' + lstDropElmnt + '\n Array elements: ' + movies + '\n');
 
 // Extracting array the elements in the range 2 - 4 using Slice() function
