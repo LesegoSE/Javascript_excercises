@@ -21,7 +21,7 @@ function getUserInput(uInput)
     
 };
 
-userInput = getUserInput("gun");
+userInput = getUserInput("hfhd");
 
 console.log("User Input: " + userInput);
 
@@ -34,4 +34,49 @@ function getCpuChoice()
 
 cpuInput = getCpuChoice();
 
-console.log("User Input: " + cpuInput);
+console.log("PC Input: " + cpuInput);
+
+// Decison logic
+
+function makeDecision()
+{   
+    // User win scenarios
+    if (userInput == choices[0] & cpuInput == choices[2])
+        {
+            return "You win!!";
+        } 
+    else if (userInput == choices[2] & cpuInput == choices[1]) 
+        {
+            return "You win!!";
+        }
+    else if (userInput == choices[1] & cpuInput == choices[0]) 
+        {
+            return "You win!!";
+        }
+
+    // CPU win scenarios
+    if (cpuInput == choices[0] & userInput == choices[2])
+        {
+            return "CPU won!!";
+        } 
+    else if (cpuInput == choices[2] & userInput == choices[1]) 
+        {
+            return "CPU won!!";
+        }
+    else if (cpuInput == choices[1] & userInput == choices[0]) 
+        {
+            return "CPU won!!";
+        }
+    else if (cpuInput == userInput)
+        {
+            return "It is a draw!!";
+        }
+    else 
+        {
+            return " ";
+        }
+}
+
+
+console.log(makeDecision());
+
