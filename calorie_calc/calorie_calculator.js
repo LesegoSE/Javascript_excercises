@@ -5,7 +5,7 @@ Date: 2024-10-08
 */
 
 // User input
-var idealDailyCalories = 5;
+var idealDailyCalories = 4.4;
 var arrActualDailyCalories = [];
 
 function inputidealDailyCalories (totalIdealDailyCalories){ // accepts user ideal daily calories input
@@ -52,6 +52,7 @@ inputActualDailyCaloriesByDay('sunday'); // populates the actual calorie array
 
 // console.log(arrActualDailyCalories);
 
+// Calculates the total actual consumed calories for the week
 function calcActualDailyCalories (){
 
     var totalActualyCalories = 0;
@@ -63,3 +64,20 @@ function calcActualDailyCalories (){
 };
 
 // console.log(calcActualDailyCalories());
+
+// Compare ideal and actual calorie totals
+
+function compairIdealAndAcrualCals(){
+    var totIdealWeeklyCals = inputActualDailyCaloriesByDay();
+    var totActualWeeklyCals = calcActualDailyCalories();
+    if ( totIdealWeeklyCals == totActualWeeklyCals) {
+        return "You have hit the target calories";
+    } else if ( totIdealWeeklyCals < totActualWeeklyCals){
+
+        return "You need to excercise";
+    } else { return "You need to eat more";}
+}
+
+console.log("Ideal: " + inputidealDailyCalories(idealDailyCalories))
+console.log("Actualy: " + calcActualDailyCalories())
+console.log(compairIdealAndAcrualCals());
