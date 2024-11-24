@@ -5,7 +5,7 @@ Date: 2024-10-08
 */
 
 // User input
-var idealDailyCalories = 4.4;
+var idealDailyCalories = 4;
 var arrActualDailyCalories = [];
 
 function inputidealDailyCalories (totalIdealDailyCalories){ // accepts user ideal daily calories input
@@ -79,5 +79,5 @@ function compairIdealAndAcrualCals(){
 }
 
 console.log("Ideal: " + inputidealDailyCalories(idealDailyCalories))
-console.log("Actualy: " + calcActualDailyCalories())
+console.log("Actual: " + calcActualDailyCalories())
 console.log(compairIdealAndAcrualCals());
